@@ -2,32 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.header{
+  font-size: 2rem;
+  background-color: antiquewhite;
+  box-shadow: 10px 10px 8px #888888;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.custom-font{
+  font-family: "SUSE", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.option-buttons{
+  margin: 10px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body{
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
